@@ -1,0 +1,49 @@
+ROTA - RECURSO
+
+Métodos HTTP:
+GET: buscar/listar uma informação do backend
+POST: criar uma informação no backend
+PUT: alterar uma informação no backend
+DELETE: deletar uma informação no backend
+
+node index.js = executa o servidor
+
+----------------------------------------------------------------------------------
+
+TIPOS DE PARÂMETROS
+
+Query Params: parâmetros nomeados enviados na rota após "?". Casos de uso: filtros, paginações... 
+ex.: /users?nome=Juca
+
+Route Params: parâmetros utilizados para identificar recursos
+ex.: /users/:id
+
+Request Body: Corpo da requisição. Utilizado para criar ou alterar recursos
+
+----------------------------------------------------------------------------------
+
+BANCOS DE DADOS
+
+SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+NoSQL: MongoDB, CouchDB, etc
+ 
+Driver: SELECT * FROM users
+Query Builder: table ('users').select('*').where()
+
+----------------------------------------------------------------------------------
+
+ENTIDADES
+- ONG
+- Caso (incident)
+
+FUNCIONALIDADES
+- Login de ONG
+- Logout de ONG
+- Cadastro de ONG 
+- Cadastrar novos casos
+- Deletar casos
+- Listar casos específicos de uma ONG
+- Listar todos os casos
+- Entrar em contato com a ONG
+
+Após definido, criar tabelas no BD
